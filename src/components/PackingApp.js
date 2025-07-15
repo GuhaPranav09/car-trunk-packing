@@ -1,14 +1,14 @@
-// Updated App.jsx with support for fragile, frequently used, weight-aware, and rear-view-safe packing
+// Updated with support for fragile, frequently used, weight-aware, and rear-view-safe packing
 
 import React, { useState } from 'react';
-import CarSelector from './components/CarSelector';
-import LuggageForm from './components/LuggageForm';
-import TrunkVisualization from './components/TrunkVisualization';
-import PackingStats from './components/PackingStats';
-import { OptimizedPacker } from './utils/packer';
-import { carModels, luggageTemplates } from './utils/helpers';
+import CarSelector from './CarSelector';
+import LuggageForm from './LuggageForm';
+import TrunkVisualization from './TrunkVisualization';
+import PackingStats from './PackingStats';
+import { OptimizedPacker } from '../utils/packer';
+import { carModels, luggageTemplates } from '../utils/helpers';
 
-export default function App() {
+export default function PackingApp() {
   const [selectedCarModel, setSelectedCarModel] = useState('');
   const [seatsFolded, setSeatsFolded] = useState(false);
   const [luggageItems, setLuggageItems] = useState([]); // each item has: name, size, weight, fragile, frequent

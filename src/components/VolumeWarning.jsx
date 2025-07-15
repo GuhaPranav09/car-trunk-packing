@@ -19,7 +19,7 @@ export default function VolumeWarning({ luggageItems, trunkVolume }) {
       <strong>Trunk Capacity:</strong> {trunkVolume.toFixed(2)} cu ft
       {exceeds && (
         <p className="mt-2 font-medium">
-          ⚠️ Warning: The requested volume exceeds the trunk's capacity. Consider removing some items or folding the seats.
+          Warning: The requested volume exceeds the trunk's capacity. Consider removing some items or folding the seats.
         </p>
       )}
     </div>
