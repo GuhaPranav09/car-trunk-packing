@@ -1,70 +1,101 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🚗 3D Car Trunk Packing Optimizer
 
-## Available Scripts
+A powerful 3D web-based application to optimize luggage arrangement in a car trunk. Built using **React**, **Three.js**, and intelligent heuristics to assist users in efficiently loading car trunks with various luggage constraints like size, weight, fragility, and accessibility.
 
-In the project directory, you can run:
+![Demo Screenshot](./public/images/demo-screenshot.png)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🧠 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔁 **Automatic Packing Optimization**
+  - Considers luggage dimensions, weight, and properties (fragile/frequently used)
+  - Ensures heavier items are at the bottom
+  - Keeps fragile and frequently used items easily accessible
 
-### `npm test`
+- 🧳 **Dynamic 3D Visualization**
+  - Interactive OrbitControls to rotate and zoom the trunk
+  - View exact positions and outlines for special luggage
+  - Animated step-by-step packing sequence
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 📦 **Luggage Form**
+  - Add custom or template bags with properties like:
+    - Dimensions (L × W × H)
+    - Weight
+    - Fragile / Frequently Used toggles
 
-### `npm run build`
+- 🚙 **Car Model Selector**
+  - Choose from predefined trunk specifications
+  - Toggle seat configuration to expand trunk depth
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ⚠️ **Volume & Visibility Awareness**
+  - Shows warning if total luggage volume exceeds trunk capacity
+  - Maintains rear-view mirror line-of-sight for safety
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📸 Screenshots
 
-### `npm run eject`
+| Landing Page | Trunk Visualization |
+|--------------|---------------------|
+| ![Landing](./public/images/landing.png) | ![Trunk](./public/images/trunk-visual.png) |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React + Tailwind CSS**
+- **Three.js (@react-three/fiber, drei)**
+- **JavaScript (ES6+)**
+- **React Router**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Clone the repo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/GuhaPranav09/car-trunk-packing.git
+cd car-trunk-packing
+```
 
-### Code Splitting
+### 2. Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm install
+```
 
-### Analyzing the Bundle Size
+### 3. Run locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run dev   # For Vite
+# OR
+npm start     # For CRA
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌐 Deployment
 
-### Advanced Configuration
+This app is deployed on [Vercel](https://car-trunk-packing-git-main-guhapranav09s-projects.vercel.app) .
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🧑‍💻 Team Autobots
 
-### `npm run build` fails to minify
+- Guha Pranav Yelchuru  
+- Ramakrishnan S  
+- Karthik V  
+- Kushagra Singh Gaur  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📄 License
+
+MIT License
+
+---
+
